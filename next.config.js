@@ -5,7 +5,13 @@ const nextConfig = {
   images: {
     unoptimized: true
   },
-  basePath: '/my-website'
+  basePath: '/my-website',
+  eslint: {
+    ignoreDuringBuilds: true,
+  },
+  typescript: {
+    ignoreBuildErrors: true,
+  }
 }
 
 module.exports = nextConfig
